@@ -1,0 +1,43 @@
+<html>
+
+    <%- include('../partials/head'); %>
+
+    <body class="bg">
+
+        <h1>TEXTO</h1>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+
+        <section class="doacao-form container">
+            <form action="/contato" method="POST">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label text-white">Nome:</label>
+                  <input name="cttnome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seu nome">
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label text-white">E-mail:</label>
+                  <input name="cttemail" type="text" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                </div>
+
+                <div class="mb-3">
+                  <label for="cttassunto" class="form-label text-white">Assunto:</label>
+                  <input name="cttassunto" type="text" class="form-control" id="cttassunto" placeholder="assunto">
+                </div>
+
+                <div class="mb-3">
+                  <label for="textomensagem" class="form-label text-white">Mensagem:</label>
+                  <textarea name="textomensagem" class="form-control" id="textomensagem" rows="3"></textarea>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn text-white mb-3">Enviar Mensagem </button>
+                </div>
+            </form>
+          </section>
+
+        <footer>
+          <%- include('../partials/footer'); %>
+      </footer>
+</body>
+</html>

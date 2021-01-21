@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.demandas-container{
+    margin-top: 60px;
+}
+
+.demandas-container .demandas-texto h2, p{
+    text-align: center;
+    color: black;
+}
+
+.demandas-texto{
+    padding-top: 20px;
+}
+
+.demandas-container .demandas-texto p{
+    font-size: 20px;
+}
+
+.demandas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.demandas .card{
+    margin: 20px;
+}
+
+.texto{
+    width: 100%;
+    height: auto;
+    max-height: 70px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.detalhes{
+    background-color: #E5383B;
+    transition: 200ms;
+}
+
+.card .card-body .detalhes:hover{
+    background-color: #ff2e32;
+}

@@ -1,0 +1,35 @@
+<html>
+
+    <%- include('../partials/head'); %>
+
+    <body>
+
+        <h1>TEXTO</h1>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+
+        <section class="cad container" style="margin-top: 60px;">
+            <form style="width: 80%; margin: 0 auto;">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Digite o nome da pessoa">
+                </div>
+                <div class="mb-3">
+                  <label for="informacoes" class="form-label">Informações</label>
+                  <textarea class="form-control" id="informacoes" style="resize: none;" rows="5" placeholder="Digite as informações da pessoa"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="necessidades" class="form-label">Necessidades</label>
+                  <textarea class="form-control" id="necessidades" style="resize: none;" rows="5" placeholder="Digite as necessidades da pessoa"></textarea>
+                </div>
+                <button type="submit" class="btn text-white" style="background-color: #E5383B;">Enviar</button>
+              </form>
+          </section>
+
+          <footer>
+            <%- include('../partials/footer'); %>
+          </footer>
+        
+</body>
+</html>

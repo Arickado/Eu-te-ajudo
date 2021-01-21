@@ -1,0 +1,40 @@
+<html>
+
+    <%- include('../partials/head'); %>
+
+    <body>
+
+        <h1>TEXTO</h1>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+        <section class="comoajudar container">
+            <div class="div-container">
+                <div class="card" style="width: 80%;">
+                    <div class="div-moderador">
+                        <h3>Seja Um Moderador</h3>
+                    </div>
+                    <div class="card-body">
+                      <a href="/moderadores" class="btn text-white">Moderador!</a>
+                    </div>
+                  </div>
+            </div><!-- div-container -->
+    
+            <div class="div-container">
+                <div class="card" style="width: 80%;">
+                    <div class="div-doacao">
+                        <h3>Ajude quem precisa</h3>
+                    </div>
+                    <div class="card-body">
+                      <a href="/demandas" class="btn text-white">Doação</a>
+                    </div>
+                  </div>
+            </div><!-- div-container -->
+        </section><!-- comoajudar -->
+
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+
+</body>
+</html>

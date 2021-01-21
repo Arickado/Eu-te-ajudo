@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.detalhe-demandas{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.card{
+    margin: 0 auto;
+    text-align: left;
+}
+
+.detalhe-demandas .ajude{
+    margin: 20px auto;
+    display: inline-block;
+    border-bottom: 2px solid #E5383B;
+}
+
+.card-text{
+    font-size: 18px;
+}
+
+.doar{
+    background-color: #E5383B;
+    transition: 200ms;
+}
+
+.card .card-body .doar:hover{
+    background-color: #ff2e32;
+}
+
+.img-demanda{
+    border-right: 1px solid #ccc;
+}

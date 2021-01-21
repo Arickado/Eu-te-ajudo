@@ -1,0 +1,93 @@
+<html>
+
+    <%- include('../partials/head'); %>
+
+    <body>
+
+        <h1>TEXTO</h1>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+
+        <section class="demandas-container">
+            <div class="demandas-texto">
+                <p>Você conhece alguém que precisa de ajuda? 
+                  <a class="btn btn-primary" href="/novademanda" role="button">Nova Demanda</a>
+                  <!-- <span class="btn text-white" style="background-color: #E5383B;" onclick="bloqueado(false)">Faça uma demanda</span> -->
+                </p>
+                <hr>  
+                <h2>Demandas!</h2>
+                <p>Veja a baixo todas as nossas demandas em que você pode contribuir.</p>
+
+            </div>
+
+            <% for(i = 0; i < dados.length; i++ ) { %>
+          
+            <div class="demandas container">
+                <div class="card" style="width: 220px;">
+                    <img src="./imagens/usuario.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= dados[i].id_morador %> </h5>
+                      <h6>Esta pessoa precisa de:</h6>
+                      <hr>
+                      <ul class="texto">
+                          <li><%= dados[i].demanda_necessidade %> </li>
+                      </ul>
+                      <a href="/detalhes-demanda" class="detalhes btn text-white">Detalhes</a>
+                    </div>
+                  </div>
+            <% } %>
+                  <!-- 
+                <div class="card" style="width: 220px;">
+                    <img src="imagens/usuario.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do morador</h5>
+                      <h6>Esta pessoa precisa de:</h6>
+                      <hr>
+                      <ul class="texto">
+                          <li>Item 1</li>
+                          <li>Item 2</li>
+                          <li>Item 3</li>
+                          <li>Item 4</li>
+                      </ul>
+                      <a href="/detalhes-demanda" class="detalhes btn text-white">Detalhes</a>
+                    </div>
+                  </div>
+                <div class="card" style="width: 220px;">
+                    <img src="imagens/usuario.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do morador</h5>
+                      <h6>Esta pessoa precisa de:</h6>
+                      <hr>
+                      <ul class="texto">
+                          <li>Item 1</li>
+                          <li>Item 2</li>
+                          <li>Item 3</li>
+                          <li>Item 4</li>
+                      </ul>
+                      <a href="/detalhes-demanda" class="detalhes btn text-white">Detalhes</a>
+                    </div>
+                  </div>
+                <div class="card" style="width: 220px;">
+                    <img src="imagens/usuario.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do morador</h5>
+                      <h6>Esta pessoa precisa de:</h6>
+                      <hr>
+                      <ul class="texto">
+                          <li>Item 1</li>
+                          <li>Item 2</li>
+                          <li>Item 3</li>
+                          <li>Item 4</li>
+                      </ul>
+                      <a href="/detalhes-demanda" class="detalhes btn text-white">Detalhes</a>
+                    </div>
+                  </div>
+            </div>
+        </section>demandas -->
+
+        <footer>
+          <%- include('../partials/footer'); %>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+
+    <%- include('../partials/head'); %>
+
+    <body>
+
+        <h1>TEXTO</h1>
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
+
+        <section class="doacao-container">
+            <section class="doaco-apresentacao" >
+                <h2>Termo de Compromisso</h2>
+              <p>Se cadastrando em nosso site. <br>Você assume um "Compromisso Social" <br>com os moradores de Bela Vista</p>
+                
+            </section>
+        
+            <section class="doacao-form container">
+                <form action="/cadastro-moderadores" method="POST">
+                  <div class="form-group">
+                    <div class="mb-3">
+                      <label for="nomedoador" class="form-label">Nome:</label>
+                      <input name="nomemoderador" type="text" class="form-control" id="nomemoderador" placeholder="Nome">
+                    </div>
+                    
+                    <div class="mb-3">
+                    <label for="nomedoador" class="form-label">Endereço:</label>
+                    <input name='endereco' type="text" class="form-control" id="endereco" placeholder="Endereço">
+                    </div>
+
+                    <div class="mb-3">
+                    <label for="nomedoador" class="form-label">Telefone:</label>
+                    <input name='telefone' type="number" class="form-control" id="telefone" placeholder="Telefone">
+                    </div>
+                  
+                    <div class="mb-3">
+                    <label for="nomedoador" class="form-label">Email:</label>
+                    <input name='email' type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inputPassword2" class="form-label">Senha:</label>
+                      <input name="senha" type="password" class="form-control" id="senha" placeholder="Password">
+                    </div>
+                    
+                    <div class="form-check mb-3 mt-3 ">
+                      <input name="termos" class="form-check-input" type="checkbox" value="aceito" id="termos">
+                      <label class="form-check-label" for="termos">
+                         Declaro que li e concordo com os termos oferecidos.
+                      </label>
+                    </div>
+                  
+                    <div class="col-12 pt-5">
+                      <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </form>
+          </div>
+      </div>
+    </div>
+    
+    </section><!-- home -->
+    </section><!-- banner -->
+
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>
